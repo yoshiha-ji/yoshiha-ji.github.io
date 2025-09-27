@@ -2,23 +2,130 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>自我介紹 - yoshiha-ji</title>
+  <title>小寂的自我介紹</title>
   <style>
-    body { font-family: '微軟正黑體', sans-serif; background: #222; color: #fff; padding: 40px; }
-    .card { background: #333; border-radius: 10px; padding: 30px; max-width: 600px; margin: auto; box-shadow: 0 4px 24px rgba(0,0,0,0.2);}
-    h1 { color: #f4a261; }
-    a { color: #2ec4b6; text-decoration: none;}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: '微軟正黑體', Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #dbeafe;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding-top: 60px;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #b9c2d5;
+      object-fit: cover;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+      background: #fff;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-family: 'Segoe Script', cursive;
+      color: #d1c4e9;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .nickname {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #b39ddb;
+      margin-bottom: 28px;
+    }
+    .section {
+      background: rgba(255,255,255,0.18);
+      border-radius: 16px;
+      margin: 20px auto;
+      max-width: 500px;
+      padding: 20px 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: left;
+      backdrop-filter: blur(4px);
+      color: #6b5c7a;
+      font-size: 1.1rem;
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #7e57c2;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #ab47bc;
+    }
+    .social img {
+      width: 36px;
+      height: 36px;
+      vertical-align: middle;
+    }
+    .bubble {
+      position: absolute;
+      top: 160px;
+      right: 120px;
+      background: #fff;
+      color: #5e35b1;
+      padding: 12px 24px;
+      border-radius: 24px;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 2px solid #b9c2d5;
+    }
+    .chara {
+      position: absolute;
+      top: 200px;
+      right: 60px;
+      width: 80px;
+      height: auto;
+      z-index: 2;
+    }
+    @media (max-width: 700px) {
+      .bubble, .chara { display: none; }
+      .container { padding-top: 30px;}
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>你好，我是小寂</h1>
-    <p>歡迎來到我的個人網頁！</p>
-    <p></p>
-    <p><br>
-      - 學歷/專長/技能<br>
-      - 興趣/社群連結<br>
-    </p>
+  <div class="container">
+    <div class="title">Lit.Link</div>
+    <img class="avatar" src="https://i.imgur.com/xxxxxxx.png" alt="頭像">
+    <div class="nickname">小寂</div>
+
+    <div class="social">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      <a href="https://instagram.com/你的帳號" target="_blank">Instagram</a>
+    </div>
+
+    <div class="section">
+      <h2>🦐 關於我 🦐</h2>
+      目前大學就讀中<br>
+      2020年12月考過N4。<br>
+      2024年7月考過日文檢定N3。<br>
+    </div>
+
+    <div class="section">
+      <h2>🍋 興趣 / 愛好 🍋</h2>
+      語言學習：目前在準備 JLPT N1，但基礎還要很努力w<br>
+      程式設計：正在學 C++ & Python<br>
+      Cosplay：偶爾會動一下但能力有限<br>
+      路跑：在學但我都慢慢慢慢跑<br>
+      遊戲：音樂maimai，電腦的話就是隨緣之作<br>
+    </div>
   </div>
+  <!-- 可愛角色泡泡（右側） -->
+  <div class="bubble">睡前放鬆一下心情</div>
+  <img class="chara" src="https://i.imgur.com/yyyyyyy.png" alt="角色">
 </body>
 </html>
